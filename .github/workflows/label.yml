@@ -2,6 +2,8 @@ name: Pull Request Labels
 on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
+  issues:
+    types: [opened, labeled, unlabeled]
 jobs:
   label:
     runs-on: ubuntu-latest
