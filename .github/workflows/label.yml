@@ -13,6 +13,9 @@ jobs:
   label: 
     name: Ensure PR not in hold
     runs-on: ubuntu-latest
+    permissions:
+      issues: read
+      pull-requests: read
     steps:
       - name: Check
         uses: mheap/github-action-required-labels@v3
