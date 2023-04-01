@@ -24,4 +24,4 @@ jobs:
           mode: exactly
           count: 0
           labels: "pr-hold"
-          add_comment": "true"
+          add_comment: "true"
