@@ -23,5 +23,5 @@ jobs:
         with:
           mode: exactly
           count: 0
-          labels: "pr-hold"
+          labels: "pr-hold, another-label"
           add_comment: "true"
