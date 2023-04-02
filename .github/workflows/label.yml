@@ -19,7 +19,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Check
-        uses: mheap/github-action-required-labels@update-existing-comment
+        uses: mheap/github-action-required-labels@v4
         with:
           mode: exactly
           count: 0
