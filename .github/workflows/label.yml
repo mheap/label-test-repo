@@ -9,14 +9,19 @@ on:
       - opened
       - labeled
       - unlabeled
+      - synchronize
 jobs:
-  label: 
+  label:
     name: Ensure PR not in hold
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - name: Check
-        uses: mheap/github-action-required-labels@v3
+        uses: mheap/github-action-required-labels@v4
         with:
           mode: exactly
           count: 0
-          labels: "pr-hold"
+          labels: "pr-hold, another-label"
+          add_comment: "true"
